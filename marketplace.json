@@ -1,0 +1,12 @@
+{
+  "name": "ops120-zcode-plugins",
+  "description": "ops120 ZCode 插件市场",
+  "plugins": [
+    {
+      "name": "agent-model-router",
+      "source": "./agent-model-router",
+      "description": "调用 Agent 时选择不同的 provider 路由和模型，支持多模型协作和成本优化",
+      "version": "0.1.5"
+    }
+  ]
+}
