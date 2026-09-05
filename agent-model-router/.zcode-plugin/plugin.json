@@ -1,6 +1,6 @@
 {
   "name": "agent-model-router",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "调用 Agent 时选择不同的 provider 路由和模型，支持多模型协作和成本优化",
   "author": { "name": "ops120" },
   "license": "MIT",

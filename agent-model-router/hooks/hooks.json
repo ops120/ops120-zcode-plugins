@@ -1,0 +1,36 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "process",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/hooks/check-agent-type.js",
+              "--session-start"
+            ],
+            "timeoutMs": 5000,
+            "statusMessage": "agent-model-router 初始化..."
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Agent|Task",
+        "hooks": [
+          {
+            "type": "process",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/hooks/check-agent-type.js"
+            ],
+            "timeoutMs": 5000,
+            "statusMessage": "检查子智能体类型..."
+          }
+        ]
+      }
+    ]
+  }
+}
