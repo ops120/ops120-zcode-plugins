@@ -1,26 +1,29 @@
+# ===== 隐私约定（用户规则）：所有点开头文件/目录都是私隐文件，默认不入库 =====
+# 如后续需要提交某个点开头的插件组件，必须在下方"例外"区显式放行
+.*
+!/.gitignore
+!**/.zcode-plugin/
+!**/.zcode-plugin/**
+!**/.mcp.json
+
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.Python
 env/
 venv/
-.venv/
 *.egg-info/
 dist/
 build/
 *.egg
 
-# IDE
-.vscode/
-.idea/
+# IDE（点开头的已由上方通配规则覆盖）
 *.swp
 *.swo
 *~
 
 # OS
-.DS_Store
 Thumbs.db
 Desktop.ini
 
